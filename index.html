@@ -1,76 +1,113 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Priya Singh</title>
+<title>Priya Sharma</title>
 
 <style>
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0f0f0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+/* CARD */
 .card {
+  width: 90%;
   max-width: 400px;
-  margin: 40px auto;
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
 }
 
+/* TITLE */
 h1 {
-  margin: 10px 0;
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
+/* TAGLINE */
 .tagline {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
+/* DESC */
 .desc {
-  margin: 10px 0;
-  color: #444;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ddd;
 }
 
+/* PACKAGES */
 .packages {
-  text-align: left;
-  margin: 15px 0;
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
 .packages h2 {
-  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .packages ul {
-  padding-left: 20px;
+  list-style: none;
 }
 
 .packages li {
-  margin: 5px 0;
-}
-
-.note {
+  margin: 6px 0;
   font-size: 14px;
-  margin: 15px 0;
 }
 
+/* NOTE */
+.note {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+/* BUTTON */
 .btn {
   display: block;
-  background: #1e88e5;
-  color: white;
+  width: 100%;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
   text-decoration: none;
+  font-size: 16px;
   font-weight: bold;
-  margin-top: 10px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 114, 255, 0.6);
 }
 
 .btn:hover {
-  background: #1565c0;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 114, 255, 1);
+}
+
+/* RESPONSIVE */
+@media(max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
 }
 </style>
 </head>
@@ -79,9 +116,9 @@ h1 {
 
 <div class="card">
 
-  <h1>👉Priya Sharma👑</h1>
+  <h1>👉 Priya Sharma 👑</h1>
 
-  <div class="tagline">RELAX. REJUVENATE. REFRESH</div>
+  <div class="tagline">RELAX • REJUVENATE • REFRESH</div>
 
   <div class="desc">
     SPA & MASSAGE SERVICES <br>
@@ -105,9 +142,7 @@ h1 {
   </div>
 
   <a class="btn" href="https://t.me/Priyamassagecentre" target="_blank">
-  SUBSCRIBE TO OUR TELEGRAM CHANNEL
-</a>
-    
+    🚀 SUBSCRIBE TO TELEGRAM
   </a>
 
 </div>
